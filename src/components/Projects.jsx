@@ -26,8 +26,8 @@ const projects = [
     desc: "Modern personal portfolio with smooth animations, GSAP scroll effects, and responsive design.",
     img: "https://res.cloudinary.com/diwn1spcp/image/upload/w_1200,q_85,f_auto,dpr_auto/v1755380187/portfolio3.0_efwkme.png",
     tools: ["React", "GSAP", "Tailwind"],
-    live: "#",
-    github: "#"
+    live: "https://solomonnnamani.netlify.app/",
+    github: "https://github.com/SolomonNnamani/Portfolio3.0"
   },
   
 ];
