@@ -3,6 +3,7 @@ import { useScrollAnimation } from "../reuseables/Animations.jsx";
 import { FiCode, FiServer, FiTrendingUp, FiMail } from "react-icons/fi";
 import { FaReact } from "react-icons/fa";
 import { SiNodedotjs, SiExpress, SiMongodb, SiJavascript, SiTailwindcss } from "react-icons/si";
+import solomonPdf from "../assets/solomon_resume.pdf";
 
 
 const About = () => {
@@ -53,7 +54,7 @@ const About = () => {
               <FiMail className="mr-2"/> Say Hello
             </a>
             <a
-              href="/../assets/solomon_resume.pdf"
+              href={solomonPdf}
               download
               className="inline-flex items-center justify-center rounded-lg border border-green-700/60 bg-transparent px-5 py-3 font-medium text-gray-100 transition hover:bg-green-700/10"
             >
@@ -83,7 +84,7 @@ const About = () => {
               <FiMail className="mr-2"/> Say Hello
             </a>
             <a
-               href="/../assets/solomon_resume.pdf"
+               href={solomonPdf}
               download
               className="inline-flex items-center justify-center rounded-lg border border-green-700/60 bg-transparent px-5 py-3 font-medium text-gray-100 transition hover:bg-green-700/10"
             >

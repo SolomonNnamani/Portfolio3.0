@@ -65,8 +65,8 @@ const Projects = () => {
             </div>
 
             {/* Content */}
-            <div className="p-5 space-y-3">
-              <h3 className="text-xl font-semibold text-gray-200">
+            <div className="p-2 md:p-5 space-y-3">
+              <h3 className="md:text-xl font-semibold text-gray-200">
                 {project.title}
               </h3>
               <p className="text-gray-400 text-sm">{project.desc}</p>
