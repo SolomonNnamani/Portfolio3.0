@@ -40,7 +40,7 @@ const About = () => {
           <div className="mt-6 flex flex-wrap justify-center gap-2">
             {pill.map((a, index)=> (
             	<div key={index} className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-gray-200" >
-            		{a.icon}{a.label}
+            		{a.icon}{a.label} 
             	</div>
             ))}
           </div>
