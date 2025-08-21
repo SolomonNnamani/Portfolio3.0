@@ -1,7 +1,7 @@
 import React from "react";
 import { useScrollAnimation } from "../reuseables/Animations.jsx";
 import { FaReact, FaNodeJs, FaGithub, FaGitAlt } from "react-icons/fa";
-import { SiMongodb, SiTailwindcss, SiExpress, SiCloudinary, SiJavascript, SiPostman, SiOpenai } from "react-icons/si";
+import {SiNextdotjs ,SiMongodb, SiTailwindcss, SiExpress, SiCloudinary, SiJavascript, SiPostman, SiOpenai } from "react-icons/si";
 import { VscVscodeInsiders } from "react-icons/vsc";
 import { TbBrandOauth } from "react-icons/tb";
 import { FiZap } from "react-icons/fi";
@@ -12,6 +12,7 @@ const skills = [
     category: "Frontend",
     items: [
       { name: "React", icon: <FaReact className="text-sky-400" /> },
+       { name: "Next.js", icon: <SiNextdotjs className="text-gray-200" /> },
       { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
       { name: "TailwindCSS", icon: <SiTailwindcss className="text-sky-500" /> },
       { name: "GSAP Animations", icon: <FiZap className="text-green-500" /> }
