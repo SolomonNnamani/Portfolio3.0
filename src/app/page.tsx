@@ -11,10 +11,9 @@ import Skills from './Skills'
 import Contact from './Contact'
 import Footer from './Footer'
 
-
 export default function Home() {
    const [isLoading, setIsLoading] = useState(false)
- const spinnerRef = useRef()
+ const spinnerRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(()=> {
     if (isLoading && spinnerRef.current) {
@@ -26,7 +25,7 @@ export default function Home() {
       });
       
       // Cleanup function to kill animation when component unmounts or isLoading changes
-      return () => animation.kill();
+      return () => { animation.kill(); };
     }
   },[isLoading])
 

@@ -1,23 +1,28 @@
-'use-client'
+'use client'
 
 import { useState } from "react";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import emailjs from '@emailjs/browser'
 import { useScrollAnimation } from "./_components/Animations";
-
+import React from 'react';
 
 const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
 const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
 const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY;
 
+type ContactProps = { setIsLoading?: (val: boolean) => void };
 
-export default function Contact ({setIsLoading}) {
-  const [formData , setFormData] = useState({
+type FormData = { name: string; email: string; message: string };
+
+type Errors = { name: string; email: string; message: string };
+
+export default function Contact ({setIsLoading}: ContactProps): JSX.Element {
+  const [formData , setFormData] = useState<FormData>({
     name:"",
     email:"",
     message:"",
   })
-  const [errors, setErrors] = useState({
+  const [errors, setErrors] = useState<Errors>({
     name:"",
     email:"",
     message:""
@@ -25,7 +30,7 @@ export default function Contact ({setIsLoading}) {
   useScrollAnimation([]);
 
   const validation = () => {
-    const error = {
+    const error: Errors = {
       name:"",
       email:"",
       message:"",
@@ -33,7 +38,6 @@ export default function Contact ({setIsLoading}) {
 
     let isValid = true;
 
-//email validation
     if (formData.email.trim() === "") {
       error.email = "Email is required";
       isValid = false;
@@ -44,7 +48,6 @@ export default function Contact ({setIsLoading}) {
       isValid = false;
     }
 
-    //formData.name
    if (formData.name.trim() === "") {
   error.name = "Name is required";
   isValid = false;
@@ -66,12 +69,11 @@ if (formData.message.trim() === "") {
     return isValid
   }
 
-
-const handleSubmit = async(e) => {
+const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault()
   if(!validation()) return
     
-    setIsLoading(true)
+    if (setIsLoading) setIsLoading(true)
   try{
     emailjs.init(publicKey)
 
@@ -80,7 +82,7 @@ const handleSubmit = async(e) => {
       from_email:formData.email,
       message:formData.message,
     }
-    const response = await emailjs.send(serviceId,templateId,templateParams)
+    const response = await emailjs.send(serviceId as string,templateId as string,templateParams)
   
     alert("Message sent successfully!")
 
@@ -93,11 +95,10 @@ const handleSubmit = async(e) => {
   }catch(err){
     alert('Failed to send message. Please try again')
   }finally{
-    setIsLoading(false)
+    if (setIsLoading) setIsLoading(false)
   }
 
 }
-
 
 
   return (
@@ -114,7 +115,7 @@ const handleSubmit = async(e) => {
         <div className="space-y-5 ">
           <div className="rounded-xl border border-white/10 bg-white/5 p-6 flex items-center gap-4 hover:scale-[1.02] hover:shadow-lg hover:shadow-green-700/20 transition duration-300">
             <FiMail className="text-xl md:text-2xl text-green-500"/>
-            <span className="text-gray-300 text-sm md:text-base">solomonnnamani02@gmail.com</span>
+            <span className="text-gray-300 text-sm md:text-base">solomonnnamani01@gmail.com</span>
           </div>
           <div className="rounded-xl border border-white/10 bg-white/5 p-6 flex items-center gap-4 hover:scale-[1.02] hover:shadow-lg hover:shadow-green-700/20 transition duration-300">
             <FiPhoneCall className="text-xl md:text-2xl text-green-500"/>
@@ -152,7 +153,7 @@ const handleSubmit = async(e) => {
            {/*Message*/}
           <textarea
             placeholder="Message"
-            rows="5"
+            rows={5}
              name="message"
             value={formData.message}
             onChange={(e) => setFormData(prev => ({...prev, [e.target.name]:e.target.value})) }
@@ -174,5 +175,3 @@ const handleSubmit = async(e) => {
     </section>
   );
 };
-
-

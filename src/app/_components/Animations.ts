@@ -1,13 +1,13 @@
-'use client'
+"use client";
 
 import { useEffect } from "react";
 import { gsap } from "gsap";
-import {ScrollTrigger}  from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const initScrollAnimations = () => {
-  const fadeElements = document.querySelectorAll(".fade-in");
+  const fadeElements = document.querySelectorAll<HTMLElement>(".fade-in");
 
   fadeElements.forEach((element, i) => {
     gsap.fromTo(
@@ -18,10 +18,10 @@ const initScrollAnimations = () => {
         y: 0,
         duration: 0.8,
         ease: "power2.out",
-       // delay: i * 0.2, // manual stagger
+        // delay: i * 0.2, // manual stagger
         scrollTrigger: {
-           //trigger: fadeElements[0], // ✅ trigger only when the first one is in view
-           trigger:element,
+          //trigger: fadeElements[0], // ✅ trigger only when the first one is in view
+          trigger: element,
           start: "top 85%",
           toggleActions: "play none none reverse",
         },
@@ -30,12 +30,12 @@ const initScrollAnimations = () => {
   });
 };
 
-export function useScrollAnimation(deps=[]) {
+export function useScrollAnimation(deps: any[] = []): void {
   useEffect(() => {
     initScrollAnimations();
 
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
-  },[...deps]);
-};
+  }, [...deps]);
+}
