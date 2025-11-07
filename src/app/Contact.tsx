@@ -16,7 +16,7 @@ type FormData = { name: string; email: string; message: string };
 
 type Errors = { name: string; email: string; message: string };
 
-export default function Contact ({setIsLoading}: ContactProps): JSX.Element {
+export default function Contact ({setIsLoading}: ContactProps) {
   const [formData , setFormData] = useState<FormData>({
     name:"",
     email:"",

@@ -41,7 +41,7 @@ export default function Footer() {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center text-gray-400 hover:text-white text-2xl hover:text-green-500 hover:scale-110 transition justify-center duration-300"
+              className="flex items-center text-gray-400  text-2xl hover:text-green-500 hover:scale-110 transition justify-center duration-300"
             >
               {link.icons}
             </a>
