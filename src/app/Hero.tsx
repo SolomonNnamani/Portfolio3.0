@@ -25,7 +25,7 @@ export default function Hero(){
   return (
     <section
       id="home"
-      className="pt-15 px-5 md:px-10 lg:px-20 text-gray-200 h-dvh w-full flex items-center justify-center"
+      className="pt-15 px-5 md:px-10 lg:px-20 text-gray-200 h-screen w-full flex items-center justify-center"
     >
       <div className="flex justify-center">
         {/* Text Section */}
@@ -71,7 +71,7 @@ export default function Hero(){
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center lg:text-2xl xl:text-3xl hover:text-green-500 hover:scale-110 transition  justify-center duration-300"
+                  className="flex items-center text-2xl xl:text-3xl hover:text-green-500 hover:scale-110 transition  justify-center duration-300"
                 >
                   {link.icons}
                 </a>
