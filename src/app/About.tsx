@@ -25,7 +25,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="w-full px-5 md:px-10 lg:px-20  pb-20">
+    <section id="about" className="w-full px-5 md:px-10 lg:px-20 md:pt-10 pb-20">
       <p className="fade-in text-gray-200 font-bold text-4xl text-center captionFont tracking-wide mb-5 lg:mb-15">
         About Me
       </p>
