@@ -25,7 +25,7 @@ export default function Hero(){
   return (
     <section
       id="home"
-      className="pt-15 px-5 md:px-10 lg:px-20 text-gray-200 h-screen w-full flex items-center justify-center"
+      className="pt-15 px-5 md:px-10 lg:px-20 text-gray-200 h-screen bg-red-400 w-full flex items-center justify-center"
     >
       <div className="flex justify-center">
         {/* Text Section */}
