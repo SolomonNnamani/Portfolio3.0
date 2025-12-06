@@ -11,7 +11,7 @@ interface SocialLink {
   icons: ReactElement;
   href: string;
 }
-
+//
 export default function Hero(){
   useScrollAnimation();
 
@@ -42,7 +42,7 @@ export default function Hero(){
           </p>
 
           <p className="md:text-xl  xl:text-2xl md:px-15 lg:px-50">
-            I turn ideas into working software. Front-end, back-end, APIs, databases - if it runs in a browser or on a server, I've probably built it.
+            I turn ideas into working software. Front-end, back-end, APIs, databases - if it runs in a browser or on a server, I&apos;ve probably built it.
           </p>
 
           {/* CTA + Socials */}
