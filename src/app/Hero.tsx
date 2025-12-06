@@ -42,8 +42,7 @@ export default function Hero(){
           </p>
 
           <p className="md:text-xl  xl:text-2xl md:px-15 lg:px-50">
-            I build seamless digital experiences using modern technologies, from
-            pixel-perfect interfaces to powerful, reliable backend systems.
+            I turn ideas into working software. Front-end, back-end, APIs, databases - if it runs in a browser or on a server, I've probably built it.
           </p>
 
           {/* CTA + Socials */}
