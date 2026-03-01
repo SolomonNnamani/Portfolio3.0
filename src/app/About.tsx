@@ -34,20 +34,15 @@ export default function About() {
         <div className="fade-in flex flex-col  gap-5 lg:flex-row lg:gap-10">
           {/* Text Section */}
           <div className="text-gray-100 text-center space-y-5 lg:w-1/2">
-            <p className="text-sm sm:text-base lg:text-sm xl:text-xl leading-relaxed ">
-              I’m Solomon, a self-taught developer who’s been shaping my skills from the ground up.
-              Everything I know, from crafting beautiful interfaces to building robust backend systems,
-              I learned through relentless research, practice, and a lot of late-night debugging.
-              <br />
-              <br />
-              What started as a challenge of learning everything alone, solving my own bugs, and figuring
-              things out without a guide became my greatest strength. It taught me independence,
-              problem-solving, and how to deliver my best work no matter the circumstances.
-              <br />
-              <br />
-              Like Naruto, I don’t give up on whatever I set my mind to do. My journey is driven by
-              determination, discipline, and a hunger to keep evolving.
-            </p>
+           <p className="text-sm sm:text-base lg:text-sm xl:text-xl leading-relaxed ">
+  I'm Solomon, a self-taught full stack developer building real products for real brands. I've gone from figuring out my first bug alone at midnight to shipping full scale Shopify storefronts, admin dashboards and editorial commerce platforms for clients.
+  <br />
+  <br />
+  Everything I know came from building, breaking things and figuring it out anyway. That process gave me something a classroom couldn't. The ability to deliver under pressure, adapt fast and care about the details that actually matter to a business.
+  <br />
+  <br />
+  I don't just write code. I build things that work, look intentional and make clients come back.
+</p>
 
             {/* Tech pills */}
             <div className="mt-6 flex flex-wrap justify-center gap-2">

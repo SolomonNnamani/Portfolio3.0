@@ -17,6 +17,24 @@ type Project = {
 
 const projects: Project[] = [
    {
+ title: "Sundress – Editorial Streetwear Commerce Platform",
+  desc: "A full-scale storefront built for SUNDRESS®, a Nigerian streetwear brand. Developed with Shopify Storefront API and Next.js, the platform delivers a premium, editorial-first shopping experience powered by GraphQL and dynamic data-driven UX. Core features include a horizontal scroll hero, category filtering, real-time inventory sync, zoom interactions on product images, variant-based image galleries, a back-in-stock notification system with automated email workflows via Resend, and a Moments editorial gallery with lightbox navigation. Designed to balance brand identity with technical precision, clean API architecture, modern front-end craft, and an admin experience that requires zero developer intervention.",
+  img: "https://res.cloudinary.com/diwn1spcp/image/upload/w_1200,q_85,f_auto,dpr_auto/v1772367446/Screenshot_350_lzkor6.png",
+  tools: [
+    "Next.js",
+    "TypeScript",
+    "GraphQL",
+    "Shopify",
+    "TailwindCSS",
+    "Framer Motion",
+    "Next API Routes",
+    "Resend",
+    "Brevo",
+    "GitHub",
+  ],
+  live: "https://www.sundressmade.com",
+},
+   {
   title: "en garde – Technical Winterwear Commerce Platform",
   desc: "A full-scale commerce platform built for a premium winterwear brand. Developed with Shopify (Storefront API) and Next.js, en garde delivers a refined, production-ready storefront powered by GraphQL, custom CMS metaobjects, and dynamic data-driven UX. Core features include real-time product visibility and maintenance controls, inventory-based stock alerts, revenue and performance tracking, automated email workflows (Resend & Brevo), and a back-in-stock notification system — allowing users to request alerts on sold-out items and receive instant notifications once inventory is replenished. Designed to balance brand aesthetics with technical precision, it demonstrates scalable Shopify integration, clean API architecture, and modern front-end craft.",
   img: "https://res.cloudinary.com/diwn1spcp/image/upload/w_1200,q_85,f_auto,dpr_auto/v1762422763/Screenshot_94_m7mtmr.png",

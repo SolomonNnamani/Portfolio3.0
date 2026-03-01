@@ -42,7 +42,7 @@ export default function Hero(){
           </p>
 
           <p className="md:text-xl  xl:text-2xl md:px-15 lg:px-50">
-            I turn ideas into working software. Front-end, back-end, APIs, databases - if it runs in a browser or on a server, I&apos;ve probably built it.
+            I build digital experiences brands are proud to show clients. From storefront to backend, I craft software that looks intentional and works without breaking.
           </p>
 
           {/* CTA + Socials */}
