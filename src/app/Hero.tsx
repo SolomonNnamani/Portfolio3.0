@@ -41,7 +41,7 @@ export default function Hero(){
             Full Stack Developer
           </p>
 
-          <p className="md:text-xl  xl:text-2xl md:px-15 lg:px-50">
+          <p className="text-sm md:text-base  xl:text-xl md:px-15 lg:px-50">
             I build digital experiences brands are proud to show clients. From storefront to backend, I craft software that looks intentional and works without breaking.
           </p>
 
