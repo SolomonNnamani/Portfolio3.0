@@ -74,7 +74,7 @@ const skills: SkillGroup[] = [
       { name: "Cloudinary", icon: <SiCloudinary className="text-blue-400" /> },
       { name: "Postman", icon: <SiPostman className="text-orange-500" /> },
       { name: "VS Code", icon: <VscVscodeInsiders className="text-blue-500" /> },
-      { name: "ChatGPT / AI Tools", icon: <SiOpenai className="text-white" /> },
+      { name: "AI Tools", icon: <SiOpenai className="text-white" /> },
     ],
   },
 ];
