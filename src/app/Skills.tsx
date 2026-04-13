@@ -11,9 +11,7 @@ import {
   FaGithub,
   FaGitAlt,
   FaMailBulk,
-  
 } from "react-icons/fa";
-
 
 import {
   SiNextdotjs,
@@ -21,14 +19,15 @@ import {
   SiTailwindcss,
   SiExpress,
   SiCloudinary,
-  SiJavascript,
   SiPostman,
   SiOpenai,
   SiGraphql,
   SiShopify,
   SiTypescript,
   SiFramer,
-  
+  SiGo,
+  SiPostgresql,
+  SiRedis,
 } from "react-icons/si";
 
 import { VscVscodeInsiders } from "react-icons/vsc";
@@ -44,7 +43,10 @@ const skills: SkillGroup[] = [
   {
     category: "Frontend",
     items: [
-      { name: "Next.js (App Router)", icon: <SiNextdotjs className="text-gray-200" /> },
+      {
+        name: "Next.js (App Router)",
+        icon: <SiNextdotjs className="text-gray-200" />,
+      },
       { name: "React", icon: <FaReact className="text-sky-400" /> },
       { name: "TypeScript", icon: <SiTypescript className="text-blue-400" /> },
       { name: "TailwindCSS", icon: <SiTailwindcss className="text-sky-500" /> },
@@ -56,12 +58,18 @@ const skills: SkillGroup[] = [
     category: "Backend / API",
     items: [
       { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
-      { name: "Next.js API Routes", icon: <SiNextdotjs className="text-gray-200" /> },
+      {
+        name: "Next.js API Routes",
+        icon: <SiNextdotjs className="text-gray-200" />,
+      },
       { name: "Express.js", icon: <SiExpress className="text-gray-400" /> },
       { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
       { name: "GraphQL", icon: <SiGraphql className="text-pink-400" /> },
       { name: "Shopify", icon: <SiShopify className="text-green-600" /> },
       { name: "OAUTH", icon: <TbBrandOauth className="text-green-400" /> },
+      { name: "Go", icon: <SiGo className="text-sky-400" /> },
+      { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-400" /> },
+      { name: "Redis", icon: <SiRedis className="text-red-500" /> },
     ],
   },
   {
@@ -69,11 +77,20 @@ const skills: SkillGroup[] = [
     items: [
       { name: "Git & GitHub", icon: <FaGithub className="text-gray-300" /> },
       { name: "Git CLI", icon: <FaGitAlt className="text-orange-500" /> },
-      { name: "Resend (Email API)", icon: <FaMailBulk className="text-red-400" /> },
-      { name: "Brevo (Email Automation)", icon: <SiPostman className="text-blue-400" /> },
+      {
+        name: "Resend (Email API)",
+        icon: <FaMailBulk className="text-red-400" />,
+      },
+      {
+        name: "Brevo (Email Automation)",
+        icon: <SiPostman className="text-blue-400" />,
+      },
       { name: "Cloudinary", icon: <SiCloudinary className="text-blue-400" /> },
       { name: "Postman", icon: <SiPostman className="text-orange-500" /> },
-      { name: "VS Code", icon: <VscVscodeInsiders className="text-blue-500" /> },
+      {
+        name: "VS Code",
+        icon: <VscVscodeInsiders className="text-blue-500" />,
+      },
       { name: "AI Tools", icon: <SiOpenai className="text-white" /> },
     ],
   },
