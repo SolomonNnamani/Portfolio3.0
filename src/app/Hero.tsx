@@ -19,7 +19,7 @@ export default function Hero(){
     { icons: <FaGithub />, href: "https://github.com/SolomonNnamani" },
     { icons: <FaXTwitter />, href: "https://x.com/therealnnamani?t=bh8h0RKFWiVjsli5T_K_dA&s=09" },
     { icons: <FaLinkedinIn />, href: "https://www.linkedin.com/in/solomon-nnamani-b5ab8a350/" },
-    { icons: <FaWhatsapp />, href: "https://wa.me/message/3C62HY2QE2F2N1" },
+    { icons: <FaWhatsapp />, href: "https://wa.me/message/2UHFR655322JP1" },
   ];
 
   return (

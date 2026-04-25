@@ -53,6 +53,22 @@ const projects: Project[] = [
     live: "https://www.engardeclothing.com",
   },
   {
+    title: "Player Leaderboard – Full Stack Dashboard",
+    desc: "A full-stack player leaderboard application built to deepen my knowledge of Go, PostgreSQL and Redis. Features real-time score tracking, global rankings, roster management and live leaderboard updates. Backend powered by Go, data persisted in PostgreSQL and cached with Redis for performance. Frontend built with Next.js and TypeScript.",
+    img: "https://res.cloudinary.com/diwn1spcp/image/upload/v1776090681/Screenshot_2026-04-13_152812_bhik1n.png",
+    tools: [
+      "Go",
+      "PostgreSQL",
+      "Redis",
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Vercel",
+    ],
+    live: "https://player-leaderboard.vercel.app",
+    github: "https://github.com/SolomonNnamani/Player_Leaderboard",
+  },
+  {
     title: "ShopSphere – Admin Control Dashboard",
     desc: "Full-stack MERN e-commerce admin dashboard with order tracking, user management, real-time performance analytics, and inventory control.",
     img: "https://res.cloudinary.com/diwn1spcp/image/upload/w_1200,q_85,f_auto,dpr_auto/v1755380053/dashboard_eaf9vg.png",
@@ -78,22 +94,7 @@ const projects: Project[] = [
     github:
       "https://github.com/SolomonNnamani/Shopsphere/tree/main/client/src/components/mainSite",
   },
-  {
-    title: "Player Leaderboard – Full Stack Dashboard",
-    desc: "A full-stack player leaderboard application built to deepen my knowledge of Go, PostgreSQL and Redis. Features real-time score tracking, global rankings, roster management and live leaderboard updates. Backend powered by Go, data persisted in PostgreSQL and cached with Redis for performance. Frontend built with Next.js and TypeScript.",
-    img: "https://res.cloudinary.com/diwn1spcp/image/upload/v1776090681/Screenshot_2026-04-13_152812_bhik1n.png",
-    tools: [
-      "Go",
-      "PostgreSQL",
-      "Redis",
-      "Next.js",
-      "TypeScript",
-      "TailwindCSS",
-      "Vercel",
-    ],
-    live: "https://player-leaderboard.vercel.app",
-    github: "https://github.com/SolomonNnamani/Player_Leaderboard",
-  },
+  
   {
     title: "Portfolio Website",
     desc: "Modern personal portfolio with smooth animations, GSAP scroll effects, and responsive design.",

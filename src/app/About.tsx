@@ -1,10 +1,19 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import { useScrollAnimation } from "./_components/Animations";
 import { FiCode, FiServer, FiTrendingUp, FiMail } from "react-icons/fi";
 import { FaReact } from "react-icons/fa";
-import { SiNodedotjs, SiExpress, SiMongodb, SiJavascript, SiTailwindcss } from "react-icons/si";
+import {
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiJavascript,
+  SiTailwindcss,
+  SiGo,
+  SiPostgresql,
+  SiRedis,
+} from "react-icons/si";
 import { ReactElement } from "react";
 
 interface TechPill {
@@ -18,14 +27,18 @@ export default function About() {
   const pill: TechPill[] = [
     { icon: <FaReact className="text-blue-400" />, label: "React" },
     { icon: <SiJavascript className="text-yellow-500" />, label: "JavaScript" },
-    { icon: <SiTailwindcss className="text-blue-400" />, label: "Tailwind" },
-    { icon: <SiNodedotjs className="text-green-700" />, label: "Node.js" },
-    { icon: <SiExpress />, label: "Express" },
     { icon: <SiMongodb className="text-green-700" />, label: "MongoDB" },
+    { icon: <SiNodedotjs className="text-green-700" />, label: "Node.js" },
+    { icon: <SiPostgresql className="text-blue-400"/>, label: "Postgre" },
+    { icon: <SiGo className="text-blue-400" />, label: "GO" },
+    { icon: <SiRedis className="text-red-500" />, label: "Redis" },
   ];
 
   return (
-    <section id="about" className="w-full px-5 md:px-10 lg:px-20 md:py-20 pb-20">
+    <section
+      id="about"
+      className="w-full px-5 md:px-10 lg:px-20 md:py-20 pb-20"
+    >
       <p className="fade-in text-gray-200 font-bold text-4xl text-center captionFont tracking-wide mb-5 lg:mb-15">
         About Me
       </p>
@@ -34,15 +47,21 @@ export default function About() {
         <div className="fade-in flex flex-col  gap-5 lg:flex-row lg:gap-10">
           {/* Text Section */}
           <div className="text-gray-100 text-center space-y-5 lg:w-1/2">
-           <p className="text-sm sm:text-base lg:text-sm xl:text-xl leading-relaxed ">
-  I'm Solomon, a self-taught full stack developer building real products for real brands. I've gone from figuring out my first bug alone at midnight to shipping full scale Shopify storefronts, admin dashboards and editorial commerce platforms for clients.
-  <br />
-  <br />
-  Everything I know came from building, breaking things and figuring it out anyway. That process gave me something a classroom couldn't. The ability to deliver under pressure, adapt fast and care about the details that actually matter to a business.
-  <br />
-  <br />
-  I don't just write code. I build things that work, look intentional and make clients come back.
-</p>
+            <p className="text-sm sm:text-base lg:text-sm xl:text-xl leading-relaxed ">
+              I'm Solomon, a self-taught full stack developer building real
+              products for real brands. I've gone from figuring out my first bug
+              alone at midnight to shipping full scale Shopify storefronts,
+              admin dashboards and editorial commerce platforms for clients.
+              <br />
+              <br />
+              Everything I know came from building, breaking things and figuring
+              it out anyway. That process gave me something a classroom
+              couldn't. The ability to deliver under pressure, adapt fast and
+              care about the details that actually matter to a business.
+              <br />
+              <br />I don't just write code. I build things that work, look
+              intentional and make clients come back.
+            </p>
 
             {/* Tech pills */}
             <div className="mt-6 flex flex-wrap justify-center gap-2">
@@ -113,7 +132,8 @@ export default function About() {
               <FiCode className="text-xl mb-2 text-green-700" />
               <h3 className="font-semibold text-gray-300">Frontend</h3>
               <p className="text-sm text-gray-300 mt-1">
-                Accessible, responsive UIs with clean components and smooth interactions.
+                Accessible, responsive UIs with clean components and smooth
+                interactions.
               </p>
             </div>
 
@@ -121,7 +141,8 @@ export default function About() {
               <FiServer className="text-xl mb-2 text-green-700" />
               <h3 className="font-semibold text-gray-300">Backend</h3>
               <p className="text-sm text-gray-300 mt-1">
-                REST APIs, auth, DB design, caching, and production-ready deployments.
+                REST APIs, auth, DB design, caching, and production-ready
+                deployments.
               </p>
             </div>
 

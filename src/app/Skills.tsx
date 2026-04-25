@@ -57,19 +57,16 @@ const skills: SkillGroup[] = [
   {
     category: "Backend / API",
     items: [
+       { name: "Go", icon: <SiGo className="text-sky-400" /> },
+      { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-400" /> },
+      { name: "Redis", icon: <SiRedis className="text-red-500" /> },
       { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
-      {
-        name: "Next.js API Routes",
-        icon: <SiNextdotjs className="text-gray-200" />,
-      },
       { name: "Express.js", icon: <SiExpress className="text-gray-400" /> },
       { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
       { name: "GraphQL", icon: <SiGraphql className="text-pink-400" /> },
       { name: "Shopify", icon: <SiShopify className="text-green-600" /> },
       { name: "OAUTH", icon: <TbBrandOauth className="text-green-400" /> },
-      { name: "Go", icon: <SiGo className="text-sky-400" /> },
-      { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-400" /> },
-      { name: "Redis", icon: <SiRedis className="text-red-500" /> },
+     
     ],
   },
   {
@@ -82,7 +79,7 @@ const skills: SkillGroup[] = [
         icon: <FaMailBulk className="text-red-400" />,
       },
       {
-        name: "Brevo (Email Automation)",
+        name: "Brevo",
         icon: <SiPostman className="text-blue-400" />,
       },
       { name: "Cloudinary", icon: <SiCloudinary className="text-blue-400" /> },
